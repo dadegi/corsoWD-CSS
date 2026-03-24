@@ -41,4 +41,10 @@ a {
 
 h1 {
     text-shadow: 4px 4px 8px darkslategray;
+    color: #DF0000;
+}
+
+h1 i {
+    font-size: 1.5em;
+    line-height: 0;
 }
