@@ -1,0 +1,96 @@
+/* 1. Link nel blocco nav interno alla header */
+
+/* 2. strong interno al primo p e primo link nel p interno al footer */
+
+/* 3. link nel primo p e secondo link nel p interno al footer */
+
+/* 4. em nella lista interna a main */
+
+/* 5. em nel p interno a main */
+
+/* ------------------ */
+
+/* Punto 1: header - nav */
+header,
+footer,
+main {
+	background-color: #f3af56;
+	padding: 20px;
+}
+
+header,
+footer {
+	margin: 20px 0;
+}
+
+nav,
+footer p {
+	background-color: #f1fe67;
+	padding: 15px;
+}
+
+nav ul li {
+	display: inline;
+	list-style-type: none;
+	padding: 10px;
+}
+
+nav ul li a:link,
+nav ul li a:visited {
+	color: white;
+	background-color: #eb3222;
+}
+
+nav ul li a:hover {
+	color: red;
+	background-color: white;
+}
+
+/* Punto 2 */
+main {
+	background-color: #f3af56;
+}
+
+#modifiedLine strong,
+footer p a:first-child {
+	background-color: #9fce63;
+}
+
+/* Punto 3 */
+#modifiedLine,
+main div:last-child {
+	background-color: #f1fe67;
+	margin: 20px 0;
+	padding: 20px;
+}
+
+#modifiedLine a,
+footer p a:last-child {
+	background-color: #ea4156;
+}
+
+#modifiedLine a:link,
+#modifiedLine a:visited,
+footer p a:last-child:link,
+footer p a:last-child:visited {
+	color: aquamarine;
+}
+
+/* Punto 4 */
+.list {
+	background-color: #96effd;
+	padding: 20px;
+}
+
+main ul li em {
+	background-color: white;
+}
+
+/* Punto 5 */
+main p em {
+	background-color: #68349a;
+}
+
+footer p a:first-child {
+	margin-right: 30px;
+}

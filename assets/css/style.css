@@ -1,13 +1,3 @@
-/* Link nel blocco nav interno alla header */
-
-/* strong interno al primo p e primo link nel p interno al footer */
-
-/* link nel primo p e secondo link nel p interno al footer */
-
-/* em nella lista interna a main */
-
-/* em nel p interno a main */
-
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 @font-face {
@@ -25,26 +15,67 @@ p em {
 
 a {
 	font-family: 'Open Sans', sans-serif;
-    font-size: 0.8em;
-    font-style: oblique;
-    font-weight: 600;
-    font-variant: small-caps;
+	font-size: 0.8em;
+	font-style: oblique;
+	font-weight: 600;
+	font-variant: small-caps;
 }
 
 #modifiedLine {
-    line-height: 1.8;
-    color: darkolivegreen;
-    letter-spacing: 5px;
-    text-align: justify;
-    text-indent: 20px;
+	line-height: 1.8;
+	color: darkolivegreen;
+	letter-spacing: 5px;
+	text-align: justify;
+	text-indent: 20px;
 }
 
 h1 {
-    text-shadow: 4px 4px 8px darkslategray;
-    color: #DF0000;
+	text-shadow: 4px 4px 8px darkslategray;
+	color: #df0000;
 }
 
 h1 i {
-    font-size: 1.5em;
-    line-height: 0;
+	font-size: 1.5em;
+	line-height: 0;
+}
+
+#elementList {
+	list-style-type: none;
+	padding-inline-start: 16px;
+}
+
+#elementList li::before {
+	content: '🟢 ';
+}
+
+#elementList li::after {
+	content: ': Studente';
+}
+
+a:link,
+a:visited {
+	text-decoration: none;
+	color: darkred;
+}
+
+a:active {
+	text-decoration: underline;
+}
+
+a:hover {
+	background-color: black;
+	color: white;
+	cursor: zoom-in;
+}
+
+#orderedList {
+    list-style-type: lower-latin;
+}
+
+#orderedList li::marker {
+    color: magenta;
+}
+
+.secondContent > p:first-of-type {
+  font-size: 1.2em;
 }
