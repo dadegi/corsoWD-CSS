@@ -6,8 +6,20 @@
 	src: url('../fonts/AlmondMilky.otf') format('opentype');
 }
 
-* {
+html,
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-size: 0.8em; */
+	/* line-height: 1.2; */
 	font-family: 'Roboto', sans-serif;
+}
+
+header,
+nav {
+	margin: 10px 0;
+	padding: 10px;
 }
 
 p em {
@@ -70,13 +82,13 @@ a:hover {
 }
 
 #orderedList {
-    list-style-type: lower-latin;
+	list-style-type: lower-latin;
 }
 
 #orderedList li::marker {
-    color: magenta;
+	color: magenta;
 }
 
 .secondContent > p:first-of-type {
-  font-size: 1.2em;
+	font-size: 1.2em;
 }

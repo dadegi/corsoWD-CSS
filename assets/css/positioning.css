@@ -1,0 +1,133 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+	box-sizing: border-box;
+}
+
+#hamburger {
+    display: none;
+}
+
+div {
+	width: 30%;
+	height: 100px;
+	border: 1px solid black;
+	margin-left: 20px;
+	margin-top: 20px;
+	display: inline-block;
+	position: relative;
+}
+
+#first {
+	background-color: red;
+}
+
+#second {
+	background-color: cyan;
+	top: 50px;
+}
+
+#third {
+	background-color: yellow;
+}
+
+aside img {
+	width: 50px;
+	margin-top: 5px;
+}
+
+aside {
+	position: fixed;
+	right: 0;
+	top: 60vh;
+}
+
+div img {
+	width: 50px;
+	position: absolute;
+	top: 5px;
+	right: 5px;
+}
+
+section {
+	width: 85%;
+	margin: 0 auto;
+	text-align: justify;
+	margin-top: 70px;
+}
+
+article {
+	height: 100px;
+	background-color: green;
+	margin-top: 70px;
+}
+
+nav {
+	height: 100px;
+	background-color: grey;
+	padding-top: 40px;
+}
+
+nav ul li {
+	display: inline;
+	list-style-type: none;
+	margin-right: 30px;
+}
+
+header {
+	position: sticky;
+	top: 0;
+	box-shadow: 0px 5px 8px 4px #666;
+	z-index: 1000;
+}
+
+footer {
+	height: 500px;
+	background-color: gray;
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        height: 50px;
+        padding: 20px;
+    }
+
+    footer {
+        height: 350px;
+    }
+
+    #second {
+        top: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    div {
+        width: 90%;
+    }
+
+    section {
+        margin: 0;
+        padding: 0 30px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #hamburger {
+        display: block;
+        height: 50px;
+        padding: 20px;
+        background-color: grey;
+    }
+
+    .bi-list {
+        font-size: 2.5rem;
+    }
+}
